@@ -17,6 +17,8 @@ import PageWrapper from '../../components/PageWrapper/PageWrapper';
 import CTA from '../../components/CTA/CTA';
 import { company } from '../../data/company';
 
+import factoryBuilding from '../../assets/02_factory_building_enhanced.png';
+
 const manufacturingMetrics = [
   { value: '50,000+ L', label: 'Installed Reaction Capacity', icon: Atom },
   { value: '-78°C to +250°C', label: 'Reaction Temperature Envelope', icon: Thermometer },
@@ -170,7 +172,7 @@ export default function Manufacturing() {
             >
               <div className="relative rounded-3xl overflow-hidden border border-slate-200/90 shadow-2xl bg-slate-900 group">
                 <img
-                  src="/card-bulk.webp"
+                  src={factoryBuilding}
                   alt="Quest Group industrial pharmaceutical reaction blocks"
                   loading="lazy"
                   decoding="async"

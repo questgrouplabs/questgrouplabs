@@ -9,6 +9,8 @@ const quickLinks = [
 ];
 
 const companyLinks = [
+  { name: 'Quest Pharma (APIs)', path: '/quest-pharma' },
+  { name: 'Quest ChemTech (Intermediates)', path: '/quest-chemtech' },
   { name: 'Capabilities', path: '/capabilities' },
   { name: 'Research & Development', path: '/research' },
   { name: 'Contact Us', path: '/contact' },
@@ -41,7 +43,7 @@ export default function Footer() {
               <img src="/logo.webp" alt="Quest Group" className="h-11 w-auto object-contain" />
             </div>
             <p className="text-sm text-slate-600 leading-relaxed font-normal">
-              Leading manufacturer of APIs and Pharmaceutical Intermediates in India. Vertically integrated with a presence in API and Bulk Drug Intermediates segments.
+              Quest Group unites <strong>Quest Pharma</strong> and <strong>Quest ChemTech</strong> — leading manufacturers of Active Pharmaceutical Ingredients (APIs) and Bulk Drug Intermediates in India (Hyderabad, Telangana).
             </p>
             <div className="flex items-center gap-2 pt-1">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200/80 text-[#0066cc] text-xs font-semibold">
@@ -116,10 +118,10 @@ export default function Footer() {
                   <Mail className="w-4 h-4" />
                 </div>
                 <a
-                  href="mailto:contact@questpharma.com"
+                  href="mailto:knreddy@questgrouplabs.com"
                   className="text-xs font-medium text-slate-600 hover:text-[#0066cc] transition-colors"
                 >
-                  contact@questpharma.com
+                  knreddy@questgrouplabs.com
                 </a>
               </div>
 

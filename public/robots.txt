@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://questpharma.com/sitemap.xml
+Sitemap: https://www.questgrouplabs.com/sitemap.xml

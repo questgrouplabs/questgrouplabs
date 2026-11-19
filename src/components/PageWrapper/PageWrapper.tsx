@@ -6,6 +6,7 @@ interface PageWrapperProps {
   children: React.ReactNode;
   title: string;
   description?: string;
+  fullTitle?: string;
 }
 
 const pageVariants = {
@@ -25,17 +26,17 @@ const pageVariants = {
   },
 };
 
-export default function PageWrapper({ children, title, description }: PageWrapperProps) {
+export default function PageWrapper({ children, title, description, fullTitle }: PageWrapperProps) {
   const { pathname } = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = `${title} | Quest Group`;
+    document.title = fullTitle || (title.includes('Quest Group') ? title : `${title} | Quest Group`);
     const meta = document.querySelector('meta[name="description"]');
     if (meta && description) {
       meta.setAttribute('content', description);
     }
-  }, [pathname, title, description]);
+  }, [pathname, title, description, fullTitle]);
 
   return (
     <motion.main

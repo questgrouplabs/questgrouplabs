@@ -2,6 +2,12 @@ import { motion } from 'framer-motion';
 import { Pill, FlaskConical, Sparkles, Sliders, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+import heroReactorCleanroom from '../../assets/hero_reactor_cleanroom.jpg';
+import heroQcLab from '../../assets/hero_qc_lab.jpg';
+import heroPlantFacility from '../../assets/hero_plant_facility.jpg';
+import factoryBuilding from '../../assets/02_factory_building_enhanced.png';
+import plantArea from '../../assets/03_plant_area_enhanced.png';
+
 const capabilities = [
   {
     num: '01',
@@ -14,7 +20,7 @@ const capabilities = [
     border: 'border-teal-100 hover:border-teal-300',
     shadow: 'hover:shadow-teal-500/15',
     accent: '#14b8a6',
-    image: '/card-api.webp',
+    image: heroReactorCleanroom,
     link: '/products',
   },
   {
@@ -28,7 +34,7 @@ const capabilities = [
     border: 'border-blue-100 hover:border-blue-300',
     shadow: 'hover:shadow-blue-500/15',
     accent: '#3b82f6',
-    image: '/card-intermediate.webp',
+    image: factoryBuilding,
     link: '/products',
   },
   {
@@ -42,7 +48,7 @@ const capabilities = [
     border: 'border-purple-100 hover:border-purple-300',
     shadow: 'hover:shadow-purple-500/15',
     accent: '#a855f7',
-    image: '/card-synthesis.webp',
+    image: heroQcLab,
     link: '/capabilities',
   },
   {
@@ -56,7 +62,7 @@ const capabilities = [
     border: 'border-amber-100 hover:border-amber-300',
     shadow: 'hover:shadow-amber-500/15',
     accent: '#f59e0b',
-    image: '/card-process.webp',
+    image: heroPlantFacility,
     link: '/capabilities',
   },
   {
@@ -70,7 +76,7 @@ const capabilities = [
     border: 'border-green-100 hover:border-green-300',
     shadow: 'hover:shadow-green-500/15',
     accent: '#22c55e',
-    image: '/card-logistics.webp',
+    image: plantArea,
     link: '/contact',
   },
 ];
@@ -149,11 +155,7 @@ export default function ValueStrip() {
                     const target = e.currentTarget;
                     if (!target.dataset.fallback) {
                       target.dataset.fallback = '1';
-                      if (c.image.includes('synthesis')) {
-                        target.src = '/why-flask.webp';
-                      } else if (c.image.includes('fine')) {
-                        target.src = '/why-rnd.webp';
-                      }
+                      target.src = heroReactorCleanroom;
                     }
                   }}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"

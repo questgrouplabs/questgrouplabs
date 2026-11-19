@@ -3,12 +3,12 @@ export const company = {
   tagline: 'Molecules for Quality Life',
   managedBy: 'K. N. Reddy',
   overview:
-    'Quest Group is one of the APIs and Intermediates manufacturing companies in India. We are vertically integrated with a presence in the API and Bulk Drug Intermediates segments. By maintaining cost leadership and competitiveness in various API Intermediates, we deliver reliable pharmaceutical solutions to our clients worldwide.',
+    'Quest Group unites Quest Pharma (commercial API manufacturing) and Quest ChemTech (advanced pharmaceutical intermediates and fine chemicals) in India. Vertically integrated across key starting materials and finished bulk drugs, we maintain strict cGMP quality and cost leadership across our Hyderabad, Telangana facilities for clients worldwide.',
   team: 'Our most valuable asset is the outstanding team. We are very proud of our dedicated and talented workforce and treasure their diverse skills, abilities, energy and commitment to work. We are promoted by a team of highly qualified professionals with academic & industrial experience. The average experience of the team is 15 years covering synthetic chemistry, New Product Development, Process development, Manufacturing of Pharmaceutical Finished APIs, Intermediates & Raw materials, Quality Management, Intellectual Property Management, Regulatory Affairs, Information Technology and Environmental Safety.',
   location: 'Plot No. 13, H.No. 5-5-35/34/P13 B1, 1st Floor, Prasanth Nagar, Kukatpally, Hyderabad - 500072, Telangana State',
   address: 'Plot No. 13, H.No. 5-5-35/34/P13 B1, 1st Floor, Prasanth Nagar, Kukatpally, Hyderabad - 500072, Telangana State',
   phone: '+91 (040) 2370-0000',
-  email: 'contact@questpharma.com',
+  email: 'knreddy@questgrouplabs.com',
   businessHours: 'Monday – Saturday: 9:00 AM – 6:00 PM IST',
 
   // Values — these are derived from verifiable company statements

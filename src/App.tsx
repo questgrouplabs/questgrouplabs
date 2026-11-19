@@ -15,6 +15,8 @@ const Quality = lazy(() => import('./pages/Quality/Quality'));
 const Manufacturing = lazy(() => import('./pages/Manufacturing/Manufacturing'));
 const Research = lazy(() => import('./pages/Research/Research'));
 const Contact = lazy(() => import('./pages/Contact/Contact'));
+const QuestPharma = lazy(() => import('./pages/QuestPharma/QuestPharma'));
+const QuestChemTech = lazy(() => import('./pages/QuestChemTech/QuestChemTech'));
 
 function PageLoader() {
   return (
@@ -42,6 +44,8 @@ export default function App() {
             <AnimatePresence mode="wait">
               <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/quest-pharma" element={<QuestPharma />} />
+                <Route path="/quest-chemtech" element={<QuestChemTech />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/products" element={<Products />} />
                 <Route path="/products/:id" element={<ProductDetails />} />

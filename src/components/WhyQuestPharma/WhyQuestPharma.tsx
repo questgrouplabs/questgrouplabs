@@ -2,6 +2,12 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { TrendingUp, Users, Beaker, Globe, CheckCircle2, ArrowRight, Sparkles } from 'lucide-react';
 
+import heroReactorCleanroom from '../../assets/hero_reactor_cleanroom.jpg';
+import heroBoardroom from '../../assets/hero_boardroom.jpg';
+import heroPlantFacility from '../../assets/hero_plant_facility.jpg';
+import heroQcLab from '../../assets/hero_qc_lab.jpg';
+
+
 const cards = [
   {
     icon: TrendingUp,
@@ -12,7 +18,7 @@ const cards = [
     border: 'border-teal-100 hover:border-teal-300',
     shadow: 'hover:shadow-teal-500/20',
     accent: '#14b8a6',
-    image: '/card-integrated.webp',
+    image: heroReactorCleanroom,
     floatDuration: 4.2,
   },
   {
@@ -24,7 +30,7 @@ const cards = [
     border: 'border-blue-100 hover:border-blue-300',
     shadow: 'hover:shadow-blue-500/20',
     accent: '#3b82f6',
-    image: '/why-expertise.webp',
+    image: heroBoardroom,
     floatDuration: 4.8,
   },
   {
@@ -36,7 +42,7 @@ const cards = [
     border: 'border-purple-100 hover:border-purple-300',
     shadow: 'hover:shadow-purple-500/20',
     accent: '#a855f7',
-    image: '/why-rnd.webp',
+    image: heroQcLab,
     floatDuration: 4.5,
   },
   {
@@ -48,7 +54,7 @@ const cards = [
     border: 'border-amber-100 hover:border-amber-300',
     shadow: 'hover:shadow-amber-500/20',
     accent: '#f59e0b',
-    image: '/why-cost.webp',
+    image: heroPlantFacility,
     floatDuration: 5.1,
   },
 ];
@@ -120,8 +126,8 @@ export default function WhyQuestPharma() {
                   }}
                 />
 
-                {/* Card Image */}
-                <div className="relative h-36 sm:h-40 w-full overflow-hidden">
+                {/* Card Visual / Image */}
+                <div className="relative h-36 sm:h-40 w-full overflow-hidden bg-slate-900">
                   <img
                     src={c.image}
                     alt={c.title}

@@ -12,6 +12,9 @@ import {
 import { Link } from 'react-router-dom';
 import PageWrapper from '../../components/PageWrapper/PageWrapper';
 import CTA from '../../components/CTA/CTA';
+import QualityAssuranceSeal from '../../components/QualityAssuranceSeal/QualityAssuranceSeal';
+
+import heroBoardroom from '../../assets/hero_boardroom.jpg';
 
 const qualityMetrics = [
   { value: 'ICH Q7', label: 'cGMP Regulatory Operating Norm', icon: Award },
@@ -148,13 +151,7 @@ export default function Quality() {
 
                 {/* Quality Assurance Emblem Visual */}
                 <div className="relative z-0 flex items-center justify-center w-full">
-                  <img
-                    src="/quality-assurance.webp"
-                    alt="Quality Assurance Certified Compliance Standard"
-                    loading="lazy"
-                    decoding="async"
-                    className="w-full max-w-[340px] sm:max-w-[380px] lg:max-w-[400px] aspect-square object-contain drop-shadow-[0_20px_35px_rgba(15,23,42,0.16)] transition-transform duration-700 ease-out group-hover:scale-105"
-                  />
+                  <QualityAssuranceSeal />
                 </div>
               </div>
             </motion.div>
@@ -236,7 +233,55 @@ export default function Quality() {
         </div>
       </section>
 
-      {/* ─── 4. Global CTA ─── */}
+      {/* ─── 4. Document Control & Audit Archive ─── */}
+      <section className="py-14 sm:py-16 bg-white border-b border-slate-200/80">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            <div className="lg:col-span-6">
+              <span className="inline-block text-xs font-bold tracking-[0.18em] text-teal-700 uppercase mb-2">
+                Audit Readiness &amp; Integrity
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight leading-tight mb-4">
+                Rigorous Document Control &amp; Batch Traceability
+              </h2>
+              <p className="text-sm text-slate-600 leading-relaxed mb-4">
+                Every batch manufactured across our facilities is accompanied by complete documentation — including Batch Manufacturing Records (BMR), Batch Packaging Records (BPR), and analytical Certificates of Analysis (CoA) strictly archived for complete regulatory transparency.
+              </p>
+              <div className="grid grid-cols-2 gap-3 pt-2">
+                <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
+                  <div className="text-teal-700 font-extrabold text-sm mb-1">ICH Q7 Compliance</div>
+                  <div className="text-xs text-slate-500">Full audit-trail verification</div>
+                </div>
+                <div className="p-3.5 rounded-xl bg-slate-50 border border-slate-200/80">
+                  <div className="text-teal-700 font-extrabold text-sm mb-1">Archived Records</div>
+                  <div className="text-xs text-slate-500">Regulatory documentation custody</div>
+                </div>
+              </div>
+            </div>
+
+            <div className="lg:col-span-6">
+              <div className="relative rounded-3xl overflow-hidden shadow-xl border border-slate-200">
+                <img
+                  src={heroBoardroom}
+                  alt="Quest Group Quality Assurance and Documentation Archive"
+                  className="w-full h-72 sm:h-80 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent" />
+                <div className="absolute bottom-4 left-4 right-4 text-white">
+                  <span className="text-xs font-bold uppercase tracking-wider text-teal-300 block mb-1">
+                    Quality Management System (QMS)
+                  </span>
+                  <p className="text-xs text-slate-200">
+                    Active document control center and batch archive at Hyderabad, Telangana facility.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── 5. Global CTA ─── */}
       <CTA />
     </PageWrapper>
   );

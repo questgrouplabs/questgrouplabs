@@ -4,12 +4,16 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, ChevronRight } from 'lucide-react';
 import { useCounter } from '../../hooks/useCounter';
 
+import heroCinematic from '../../assets/hero_cinematic.png';
+import heroPlantFacility from '../../assets/hero_plant_facility.jpg';
+import heroReactorCleanroom from '../../assets/hero_reactor_cleanroom.jpg';
+import heroBoardroom from '../../assets/hero_boardroom.jpg';
+
 const bgImages = [
-  '/facility-reactor.webp',
-  '/hero-bg.webp',
-  '/hero-reactors-v2.webp',
-  '/hero-synthesis-v2.webp',
-  '/hero-cleanroom-v2.webp',
+  heroCinematic,
+  heroPlantFacility,
+  heroReactorCleanroom,
+  heroBoardroom,
 ];
 
 const slideDuration = (index: number) => (index === 0 ? 5000 : 3000);
@@ -18,7 +22,7 @@ const fadeUp = {
   hidden: { opacity: 0, y: 28 },
   visible: (i: number) => ({
     opacity: 1, y: 0,
-    transition: { delay: 0.1 + i * 0.12, duration: 0.7, ease: [0.16, 1, 0.3, 1] as [number,number,number,number] },
+    transition: { delay: 0.1 + i * 0.12, duration: 0.7, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] },
   }),
 };
 
@@ -71,10 +75,17 @@ export default function Hero() {
 
       {/* Text content */}
       <div style={{ position: 'relative', zIndex: 10, maxWidth: 1280, margin: '0 auto', width: '100%', padding: '0 3rem' }}>
-        <div style={{ maxWidth: 560 }}>
+        <div style={{ maxWidth: 640 }}>
+          {/* Group Division Pill */}
+          <motion.div custom={0} variants={fadeUp} initial="hidden" animate="visible" className="mb-3">
+            <span className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/15 backdrop-blur-md border border-white/20 text-teal-300 text-xs font-bold uppercase tracking-wider shadow-sm">
+              <span className="w-2 h-2 rounded-full bg-teal-400 animate-pulse" />
+              <span>Quest Group | Quest Pharma &amp; Quest ChemTech</span>
+            </span>
+          </motion.div>
 
-          <motion.h1 custom={0} variants={fadeUp} initial="hidden" animate="visible"
-            className="font-black leading-[1.18] tracking-tight mb-5 select-none"
+          <motion.h1 custom={1} variants={fadeUp} initial="hidden" animate="visible"
+            className="font-black leading-[1.18] tracking-tight mb-4 select-none"
             style={{ fontSize: 'clamp(1.85rem, 3.2vw, 3.1rem)' }}
           >
             <span className="text-white drop-shadow-[0_2px_14px_rgba(0,0,0,0.85)]">
@@ -92,6 +103,12 @@ export default function Hero() {
               APIs &amp; Intermediates
             </span>
           </motion.h1>
+
+          <motion.p custom={2} variants={fadeUp} initial="hidden" animate="visible"
+            className="text-slate-200 text-sm sm:text-base leading-relaxed mb-6 font-normal drop-shadow-sm"
+          >
+            Quest Group unites <strong className="text-white font-semibold">Quest Pharma</strong> and <strong className="text-white font-semibold">Quest ChemTech</strong> to deliver high-purity Active Pharmaceutical Ingredients and advanced bulk drug intermediates across India and global markets.
+          </motion.p>
 
           <motion.div custom={1} variants={fadeUp} initial="hidden" animate="visible"
             style={{ display: 'flex', gap: '0.75rem', marginBottom: '2rem' }}

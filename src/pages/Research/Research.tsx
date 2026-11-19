@@ -19,6 +19,8 @@ import { Link } from 'react-router-dom';
 import PageWrapper from '../../components/PageWrapper/PageWrapper';
 import CTA from '../../components/CTA/CTA';
 
+import heroQcLab from '../../assets/hero_qc_lab.jpg';
+
 const rdMetrics = [
   { value: '100%', label: 'Non-Infringing Route Scouting (FTO)', icon: ShieldCheck },
   { value: '15+ Yrs', label: 'Average Senior Chemist Experience', icon: FlaskConical },
@@ -199,7 +201,7 @@ export default function Research() {
             >
               <div className="relative rounded-3xl overflow-hidden border border-slate-200/90 shadow-2xl bg-slate-900 group">
                 <img
-                  src="/why-rnd.webp"
+                  src={heroQcLab}
                   alt="Quest Group chemical research and laboratory synthesis"
                   loading="lazy"
                   decoding="async"

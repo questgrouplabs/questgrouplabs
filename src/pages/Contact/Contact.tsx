@@ -24,13 +24,13 @@ const contactDetails = [
   {
     icon: Phone,
     title: 'Direct Telephone Line',
-    value: '+91 (040) 2370-0000',
+    value: '+91 9949474359',
     sub: 'Monday to Saturday, 9:00 AM - 6:00 PM IST',
   },
   {
     icon: Mail,
     title: 'Commercial & Technical Inquiries',
-    value: 'contact@questpharma.com',
+    value: 'knreddy@questgrouplabs.com',
     sub: 'Official communications & inquiry desk',
   },
   {
@@ -118,7 +118,7 @@ export default function Contact() {
                 </a>
 
                 <a
-                  href="mailto:contact@questpharma.com"
+                  href="mailto:knreddy@questgrouplabs.com"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-slate-50 text-slate-700 font-bold text-xs border border-slate-200 shadow-2xs hover:border-slate-300 transition-all"
                 >
                   <span>Email Direct Desk</span>
@@ -137,7 +137,7 @@ export default function Contact() {
       <section id="contact-form-section" className="py-16 sm:py-24 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-            
+
             {/* Left Contact Information */}
             <div className="lg:col-span-5 space-y-6">
               <div>

@@ -16,6 +16,8 @@ import { Link } from 'react-router-dom';
 import PageWrapper from '../../components/PageWrapper/PageWrapper';
 import CTA from '../../components/CTA/CTA';
 
+import plantAreaEnhanced from '../../assets/03_plant_area_enhanced.png';
+
 const keyStats = [
   { value: '150+', label: 'Commercial APIs & Intermediates', icon: FlaskConical },
   { value: '15+', label: 'Years Average Team Experience', icon: Users },
@@ -167,8 +169,8 @@ export default function About() {
             >
               <div className="relative rounded-3xl overflow-hidden border border-slate-200/90 shadow-2xl bg-slate-900 group">
                 <img
-                  src="/why-expertise.webp"
-                  alt="Quest Group chemical synthesis and pharmaceutical engineering"
+                  src={plantAreaEnhanced}
+                  alt="Quest Group pharmaceutical manufacturing facility campus"
                   loading="lazy"
                   decoding="async"
                   className="w-full h-[360px] sm:h-[420px] lg:h-[460px] object-cover transition-transform duration-700 ease-out group-hover:scale-105"

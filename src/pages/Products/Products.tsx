@@ -18,6 +18,8 @@ import PageWrapper from '../../components/PageWrapper/PageWrapper';
 import CTA from '../../components/CTA/CTA';
 import { products } from '../../data/products';
 
+import heroReactorCleanroom from '../../assets/hero_reactor_cleanroom.jpg';
+
 const categoryStyles: Record<string, { badge: string; iconBg: string; iconColor: string }> = {
   'Commercial APIs': {
     badge: 'bg-emerald-50 text-emerald-800 border-emerald-200/70',
@@ -185,7 +187,7 @@ export default function Products() {
             >
               <div className="relative rounded-3xl overflow-hidden border border-slate-200/90 shadow-2xl bg-slate-900 group">
                 <img
-                  src="/card-api.webp"
+                  src={heroReactorCleanroom}
                   alt="Quest Group API and chemical intermediate molecules"
                   loading="lazy"
                   decoding="async"
