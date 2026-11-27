@@ -57,6 +57,7 @@ export default function ContactForm() {
           access_key: import.meta.env.VITE_WEB3FORMS_KEY,
           from_name: data.name,
           subject: `Quest Group Website Inquiry: ${data.subject}`,
+          inquiry_subject: data.subject,
           name: data.name,
           company: data.company,
           email: data.email,
