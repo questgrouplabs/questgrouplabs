@@ -54,8 +54,7 @@ export default function ContactForm() {
           Accept: 'application/json',
         },
         body: JSON.stringify({
-          access_key: import.meta.env.VITE_WEB3FORMS_KEY || 'YOUR_ACCESS_KEY_HERE',
-          to_email: 'knreddy@questgrouplabs.com',
+          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
           from_name: data.name,
           subject: `Quest Group Website Inquiry: ${data.subject}`,
           name: data.name,
@@ -72,18 +71,12 @@ export default function ContactForm() {
         setData(initialData);
         setErrors({});
       } else {
-        // Fallback: if key is not yet configured, simulate success for demo preview
-        console.warn('Web3Forms response:', result);
-        setStatus('success');
-        setData(initialData);
-        setErrors({});
+        console.error('Web3Forms error:', result);
+        setStatus('error');
       }
     } catch (err) {
       console.error('Submission error:', err);
-      // Graceful fallback so demo does not crash
-      setStatus('success');
-      setData(initialData);
-      setErrors({});
+      setStatus('error');
     }
   };
 
